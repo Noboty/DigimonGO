@@ -1,2 +1,2 @@
 # DigimonGO
-I think the title speaks for itself. Obviously, no copyright intended.
+I think the title speaks for itself. Obviously, no copyright intended. Only practice
