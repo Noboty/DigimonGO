@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<title>List of digimon in the wild</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/DigimonGO.css">
+		<script src="scripts/digiscripts.js"></script>
+		<script src="scripts/simpleCart.js"></script>
+		<script src="scripts/modernizr.custom.05819.js"></script>
+	</head>
+
+<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="digidex.html">Digidex</a></li>
+				<li><a href="digiauction.html">Auction House</a></li>
+				<li><a href="digivirus.html">Virus Chest</a></li>
+				<li><a href="digioutbreaks.html">Outbreaks</a></li>
+				<li><a href="application.html">Registration</a></li>
+				<li><a href="digihelp.html">Help</a></li>
+				
+			<div class="cart" class="simpleCart_total">
+				<p>Items in cart: <span class="simpleCart_quantity"></span> Total:
+				<div class="simpleCart_total"></div></p>
+				<a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+				<a href="javascript:;" class="simpleCart_empty"><button>Empty</button></a>
+			</div>
+			</ul>
+		</nav>
+			<br>
+	<article>
+		<header>
+				<h1>Welcome to the Outbreak page!</h1>
+		</header>
+		<p>Greetings, Cybersleuths! Below is a list Digimon that we currently know of that either escaped from our Virus Chest or are never-berfore-seen. We have posted their approxiate times of first contact and and the areas where they are likely to be found in. We need your help capturing them. The more people we have collecting info on the news ones, the fastest we can form an accurate description of them. We expect to have the situation under control in about two week's time. 
+		
+		<table>
+			<thead>
+				<tr> 
+					<th class="table_head"colspan=6>Escapees and their last known location</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Name</th>
+					<th>Image</th>
+					<th>Address</th>
+					<th>Town</th>
+					<th>State</th>
+					<th>Estimated time of escape (in global time)</th>
+				</tr>
+				
+				<tr>
+					<td>Myotismon</td>
+					<td><img src="images/outbreaks/myotismon.jpg"></td>
+					<td>123 Abc street</td>
+					<td>NYC</td>
+					<td>NY</td>
+					<td>1300</td>
+				</tr>
+				
+				<tr>
+					<td>Goblimon</td>
+					<td><img src="images/outbreaks/Goblimon.jpg"></td>
+					<td>456 def street</td>
+					<td>Paterson</td>
+					<td>NJ</td>
+					<td>1330</td>
+				</tr>
+				
+				<tr>
+					<td>Ogremon</td>
+					<td><img src="images/outbreaks/Ogremon.jpg"></td>
+					<td> 789 ghi street</td>
+					<td>Reading</td>
+					<td>PA</td>
+					<td>1400</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</article>
+		<br>
+<footer>
+	<p id="date"></p>
+	
+	<script>
+		document.getElementById("date").innerHTML = Date();
+	</script>
+	</footer>
+</body>
+</html>

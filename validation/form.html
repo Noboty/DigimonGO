@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<title> Sample Forms </title>
+		<script>"validation.js"</script>
+	</head>
+	<body>
+		<p id="errorText"></p>
+		<form id='registration' novalidate="novalidate" action="process.html">  
+			<label for="userid">User id:</label>
+			<input type="text" name="uid" size="12" required /> <br/>
+			<label for="passid">Password:</label> 
+			<input type="password" name="passw" size="12" id="passw" /> <br/>
+			<label for="passid">Confirm Password:</label> 
+			<input type="password" name="repass" size="12" id="repass" /> <br/>
+			<label for="zipcode">ZIP:</label> 
+			<input type="text" name="zip" size="12" id ="zip" /> <br/>
+			<input type="submit" name="btsubmit" value="Submit" />
+			<input type="reset" name="reset" value="Reset" />
+		</form>
+		
+	</body>
+</html>

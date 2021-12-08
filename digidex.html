@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>DigimonGO Digimon database</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/DigimonGO.css">
+		<script src="scripts/digiscripts.js"></script>
+		<script src="scripts/simpleCart.js"></script>
+		<script src="scripts/modernizr.custom.05819.js"></script>
+	</head>
+<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="digidex.html">Digidex</a></li>
+				<li><a href="digiauction.html">Auction House</a></li>
+				<li><a href="digivirus.html">Virus Chest</a></li>
+				<li><a href="digioutbreaks.html">Outbreaks</a></li>
+				<li><a href="application.html">Registration</a></li>
+				<li><a href="digihelp.html">Help</a></li>
+				
+			<div class="cart" class="simpleCart_total">
+				<p>Items in cart: <span class="simpleCart_quantity"></span> Total:
+				<div class="simpleCart_total"></div></p>
+				<a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+				<a href="javascript:;" class="simpleCart_empty"><button>Empty</button></a>
+			</div>
+			</ul>
+		</nav>
+		
+			<br>
+		<article>
+			<header>
+				<h1>Welcome to the Digidex!</h1>
+			</header>
+			<p>	Contained here is a list of all currently known digimon. As our knowledgell expends, so too will this list.</p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th class="table_head" colspan=5>List of known Digimon</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr> 
+						<th>Digimon Name</th>
+						<th>Profile picture</th>
+						<th>Level</th>
+						<th>Attribute</th>
+						<th>Description</th>
+						
+					</tr>
+					
+					<tr>
+						<td>Agumon</td>
+						<td><img src="images/digidex/agumon.gif"></td>
+						<td>Rookie</td>
+						<td>Vaccine</td>
+						<td>Agumon is a Reptile Digimon. It has grown up and become able to walk on two legs, and has an appearance like a tiny dinosaur. 
+						Since it is still on the way to adulthood, its power is low, but is totally fearless. 
+						It has sharp claws on both its hands and feet, and demonstrates its power in battle.</td>
+					</tr>
+					
+					<tr>
+						<td>Gabumon</td>
+						<td><img src="images/digidex/Gabumon.gif"></td>
+						<td>Rookie</td>
+						<td>Data,Vaccine</td>
+						<td>Gabumon is a Digimon whose name and design are derived from the "Gabu Kashira", a Kabuki puppet whose face instantly changes from that of a timid maiden to a horned fiend with the pull of a string. Due to its extremely timid and shy personality, it always gathers up the data which Garurumon leaves behind, and shapes it into a fur pelt to wear. Because it is wearing the fur pelt of Garurumon, who is feared by other Digimon, it fills the role of safeguarding itself as a result of protecting its body. When it is wearing the fur pelt, its personality does a complete 180° shift.</td>
+					</tr>
+					
+					<tr>
+						<td>Palmon</td>
+						<td><img src="images/digidex/Palmon.jpg"></td>
+						<td>Rookie</td>
+						<td>Data,Vaccine</td>
+						<td>Palmon is a Vegetation Digimon whose name is derived from the palm tree (Phoenix dactylifera) and whose design is derived from the mythological Mandrake. It has a tropical flower blooming on its head. As a Vegetation Digimon, it gets along with FanBeemon. During the day it opens up the flower and spreads its leaf-like arms to perform photosynthesis. It usually buries its root-like feet under the ground, and although it is absorbing nutrients, it is also able to walk. As for the flower on its head, when it is joyful or happy it will waft about a sweet fragrance, but when it is angered or senses danger, it releases a foul stench that will drive off even large Digimon.</td>
+					</tr>
+					
+					<tr>
+						<td>Tentomon</td>
+						<td><img src="images/digidex/Tentomon.jpg"></td>
+						<td>Rookie</td>
+						<td>Vaccine</td>
+						<td>Tentomon is an Insectoid Digimon whose name and design are derived from the ladybug (Harmonia axyridis). It is the original type of Insectoid Digimon who, although it has a hard shell, still has low aggression. It has one hard claw on each of its fore-legs, and four on each of its middle- and hind-legs, and in particular, the middle-legs are able to skillfully grasp objects just like a human hand. Although the other Insectoids at its Digivolution level only possess fighting spirit, it still retains its naturally friendly sentiments, and displays its carefree way of life by doing things like sniffing the scent of flowers and napping in the shade of a tree.</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+			<br>
+<footer>
+	<p id="date"></p>
+	
+	<script>
+		document.getElementById("date").innerHTML = Date();
+	</script>
+	</footer>
+	</body>
+</html>

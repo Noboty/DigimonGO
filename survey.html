@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<title>DigimonGO Cybersleuth Application</title>
+	<link rel="stylesheet" type="text/css" href="Stylesheets/DigimonGO.css">
+	<script src="modernizer.js"></script>
+	<script src="scripts/simpleCart.js"></script>
+	<script src="scripts/digiscripts.js"></script>
+	<script src="scripts/simpleCart.min.js"></script>
+	<script src="scripts/validation.js"></script>
+	
+</head>
+
+<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="digidex.html">Digidex</a></li>
+				<li><a href="digiauction.html">Auction House</a></li>
+				<li><a href="digivirus.html">Virus Chest</a></li>
+				<li><a href="digioutbreaks.html">Outbreaks</a></li>
+				<li><a href="application.html">Registration</a></li>
+				<li><a href="digihelp.html">Help</a></li>
+				
+			<div class="cart" class="simpleCart_total">
+				<p>Items in cart: <span class="simpleCart_quantity"></span> Total:
+				<div class="simpleCart_total"></div></p>
+				<a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+				<a href="javascript:;" class="simpleCart_empty"><button>Empty</button></a>
+			</div>
+			</ul>
+		</nav>
+		<br>
+		<h1 id="greeting"></h1>
+	<form id="survey" novalidate="novalidate" action="signup.php" method="post">
+		<fieldset>
+			<legend= "feedback">
+				<h3>Please rate your experience on the site on a scale of one to five across several categories.</h3>
+			<label>Speed/responsiveness:</label> 
+					1<input type="radio" name="speed" value="1speed">
+					2<input type="radio" name="speed" value="2speed">
+					3<input type="radio" name="speed" value="3speed" checked>
+					4<input type="radio" name="speed" value="4speed">
+					5<input type="radio" name="speed" value="5speed">
+				
+			<label>Aesthetics/style</label>
+				1<input type="radio" name="style" value="1style">
+				2<input type="radio" name="style" value="2style">
+				3<input type="radio" name="style" value="3style" checked>
+				4<input type="radio" name="style" value="4style">
+				5<input type="radio" name="style" value="5style">
+				
+			<label>Quality of content</label>
+				1<input type="radio" name="quality" value="1quality"></input>
+				2<input type="radio" name="quality" value="2quality"></input>
+				3<input type="radio" name="quality" value="3quality"></input checked>
+				4<input type="radio" name="quality" value="4quality"></input>
+				5<input type="radio" name="quality" value="5quality"></input>
+				
+			<h3>If you've any comments you wish to pass to the team, you may post it below</h3>
+			<textarea form ="survey" name="closing_comment" id="closing_comment" rows="15" cols="60"></textarea>
+			</legend>
+		</fieldset>
+		
+		<fieldset>
+			<legend="sweepstakes">
+				<p>Thank you for your participation. The information you provided here today will go a long way towards improving out websites. As thanks, we are currently holding a giveaway to those who participated. Would you like to enter?</p>
+				Yes<input type="radio" name="yessweep" value="yessweep"></input>
+				No<input type="radio" name="nosweep" value="nosweep"></input>
+			</legend>
+		</fieldset>
+
+	
+	<input type="submit" id="sender" value="submit" name="sender">
+	<input type="reset" id="reseter" value="reset" name="reseter">
+</form>
+	<br>
+	
+	<footer>
+	<p id="date"></p>
+	
+	<script>
+		document.getElementById("date").innerHTML = Date();
+	</script>
+	</footer>
+</body>
+</html>

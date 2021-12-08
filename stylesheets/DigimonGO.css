@@ -1,0 +1,198 @@
+/* Navigation bar stylings */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav li {
+    float: left;
+}
+
+nav li div{
+    float: left;
+	
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: blue;
+}
+
+nav li {
+    border-right: 1px solid #bbb;
+}
+nav li:last-child {
+    border-right: none;
+}
+
+/* Content stylings*/
+
+body{
+	background-image: url("../images/matrix.jpg");
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+header, h1 {
+	text-align:center;
+	}
+article p {
+	color: black;
+	text-align:none;
+	}
+
+head h1 {
+		color:black;
+		}
+body h2 {
+	text-align:center;
+}
+
+article{
+	background-color:white;
+border-radius:1em;
+padding:0.5em;
+
+}
+
+div {
+	background-color:white;
+border-radius:1em;
+padding:0.5em;
+}
+
+
+#greeting{
+	color: yellow;
+}
+
+/* Styles the cart*/
+
+
+button a{
+	text-decoration:none;
+}
+.simpleCart_checkout {
+	background-color:orange;
+}
+.simpleCart.empty {
+	background-color:orange;
+}
+
+.cart {
+	
+	border-radius:0.2em;
+	float:right;
+	display:inline;
+	width:30%;
+	
+}
+
+.cart p{
+	color: 	black;
+}
+
+
+/* Styles the featured digimon of the week */
+article p {
+	text-align:center;
+	}
+
+figcaption {
+	color:black;
+	margin-top: 1em;
+	text-align:center;
+}
+article figure img{
+	display:block;
+	height:20em;
+	width:20em;
+border: 0.5em solid #ddd;
+position:center;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+/* Styles the outbreak, auction, and virus chest tables  */
+table {
+	border-width:thin;
+border-style:solid;
+border-color:black;
+background-color:white;
+
+}
+th {
+	colspan:2;
+text-align:center;
+border-width:thin;
+border-style:Solid;
+
+}
+td {
+	text-align:center;
+	border-width:thin;
+	border-style:solid;
+	
+}
+
+img {
+	display:block;
+	height:10em;
+	width:10em;
+
+position:center;
+margin-left:auto;
+margin-right:auto;
+}
+
+.contact {
+	font-style:italic;
+}
+
+/* Styles the forms */
+form {
+	background-color:White;
+}
+
+/* Styles the footer */
+footer {
+	background-color:white;
+border-radius:1em;
+padding:1em;
+text-align:center;
+}
+
+
+/* slideshow controls */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+

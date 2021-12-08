@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<title>DigimonGO: Home of the Cybersleuths</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/DigimonGO.css">
+	<script src="scripts/simpleCart.js"></script>
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	<script src="scripts/simpleCart.min.js"></script>
+	<script src="scripts/validation.js"></script>
+	
+<script type="text/javascript">
+simpleCart.checkoutTo = PayPal;
+simpleCart.email = "you@yours.com";
+</script>
+
+
+	
+</head>
+
+<body>
+	<h1 id="greeting"></h1>
+	
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="digidex.html">Digidex</a></li>
+				<li><a href="digiauction.html">Auction House</a></li>
+				<li><a href="digivirus.html">Virus Chest</a></li>
+				<li><a href="digioutbreaks.html">Outbreaks</a></li>
+				<li><a href="application.html">Registration</a></li>
+				<li><a href="digihelp.html">Help</a></li>
+				
+			<div class="cart" class="simpleCart_total">
+				<p>Items in cart: <span class="simpleCart_quantity"></span> Total:
+				<a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+				<a href="javascript:;" class="simpleCart_empty"><button>Empty</button></a>
+			</div>
+			</ul>
+		</nav>
+			<br>
+	
+		<article>
+
+	
+			<header>
+				<h1> What are Digimon?</h1>
+			</header>
+				<p> There exists world separate from ours, a virtual world. In this world,  where data is given shape. 
+				There, data takes on the form of sentient beings known as Digital Monsters, or Digimon. 
+				For the most part, they keep to themselves, but there are some who would seek to do our world harm. They plot to take over our world through technology; smartphones, TVs, cars, planes, you name it. </p>
+				<p>That is where we come in. </p>
+				
+			<header>
+				<h1> Who We Are</h1>
+			</header>
+				<p>The Digimon Cybersleuth Detective Agency is made up of humans and Digimon working together to protect our homes.
+				The more operatives we have in the field, the merrier, so don't hesitate to apply and expand our network!</p>
+				<p></p>
+		</article>	
+		
+			<br>
+			
+		<article class="featured">
+		
+		
+		<header>
+				<h1>Digimon of the Week</h1>
+			</header>
+			<p>This week's featured Digimon is Impmon!</p>
+			<figure>
+				<img  src="images/featured/impmon.png" alt="featured digimon of the week">
+				<figcaption>Impmon's namesake is from the mythological creature: the Imp. Imp are said to be mischevous, fond of playing pranks on people.</figcaption>
+			</figure>
+			<a a href="">Go to full entry...</a>
+			
+		</article>
+			<br>
+		<article class="featured">
+				<header>
+					<h1 >Upcoming Cyberslueth Meeting</h1>
+				</header>
+				<p>Hey agents! On the upcoming Saturday, we at the agency will be having a meeting to discuss our work and generally hang out at Two-Bit's Retro Arcade over 153 Essex St, New York, NY 10002.</p>
+				<figure>
+					<img id="meeetup_spot" src="images/retro_arcade.jpg" alt="Meetup spot of the month">
+					<figcaption>We'll be here from 12pm to 8pm.</figcaption>
+				</figure>
+				<p>If you're nearby, stop on by!</p>
+	
+		
+			</article>
+				<br>
+			<div class="slideshow-container">		
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+	</div>
+		  <script>
+				var slideIndex = 0;
+				showSlides();
+				
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("featured");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+					   slides[i].style.display = "none";  
+					}
+					slideIndex++;
+					if (slideIndex> slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+					setTimeout(showSlides, 3500); // Change image every 2 seconds
+					}
+					
+				
+			</script>
+		
+			<br>
+		
+	<footer>
+		<p id= "date"></p> </p>
+		<script>
+			document.getElementById("date").innerHTML = Date();
+		</script>
+	</footer>
+</body>
+</html>

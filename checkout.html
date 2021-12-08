@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+
+<title>DigimonGO Checkout Page</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/DigimonGO.css">
+	<script src="scripts/digiscripts.js"></script>
+	<script src="scripts/simpleCart.js"></script>
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	<script type="text/javascript">
+	
+<script type="text/javascript">
+simpleCart.checkoutTo = PayPal;
+simpleCart.email = "you@yours.com";
+</script>
+
+
+</head>
+<body>
+
+	<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="digidex.html">Digidex</a></li>
+				<li><a href="digiauction.html">Auction House</a></li>
+				<li><a href="digivirus.html">Virus Chest</a></li>
+				<li><a href="digioutbreaks.html">Outbreaks</a></li>
+				<li><a href="application.html">Registration</a></li>
+				<li><a href="digihelp.html">Help</a></li>
+				
+			<div class="cart" class="simpleCart_total">
+				<p>Items in cart: <span class="simpleCart_quantity"></span> Total:
+				<div class="simpleCart_total"></div></p>
+				<a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+				<a href="javascript:;" class="simpleCart_empty"><button>Empty</button></a>
+			</div>
+			</ul>
+		</nav>
+			<br>
+<div class="simpleCart_items">
+		You have <span class="simpleCart_quantity"></span> items in your Cart.
+Cart total: <div class="simpleCart_total"></div>
+
+</div>
+	<br>
+
+<div class="simpleCart_total">
+
+
+<a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+<a href="javascript:;" class="simpleCart_empty">Empty</a>
+
+<footer>
+	<p id="date"></p>
+	
+	<script>
+		document.getElementById("date").innerHTML = Date();
+	</script>
+	</footer>
+</body>
+
+</html>

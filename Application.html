@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+	<title>DigimonGO Cybersleuth Application</title>
+	<link rel="stylesheet" type="text/css" href="Stylesheets/DigimonGO.css">
+	<script src="modernizer.js"></script>
+	<script src="scripts/simpleCart.js"></script>
+	<script src="scripts/digiscripts.js"></script>
+	<script src="scripts/simpleCart.min.js"></script>
+	<script src="scripts/validation.js"></script>
+	
+</head>
+
+<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="digidex.html">Digidex</a></li>
+				<li><a href="digiauction.html">Auction House</a></li>
+				<li><a href="digivirus.html">Virus Chest</a></li>
+				<li><a href="digioutbreaks.html">Outbreaks</a></li>
+				<li><a href="application.html">Registration</a></li>
+				<li><a href="digihelp.html">Help</a></li>
+				
+			<div class="cart" class="simpleCart_total">
+				<p>Items in cart: <span class="simpleCart_quantity"></span> Total:
+				<div class="simpleCart_total"></div></p>
+				<a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+				<a href="javascript:;" class="simpleCart_empty"><button>Empty</button></a>
+			</div>
+			</ul>
+		</nav>
+		<br>
+		<h3 id="agreeting"></h3>
+		
+	<form id="registration" novalidate="novalidate" action="signup.php" method="post">
+		<fieldset>
+			<p id="errorText"></p>
+			<legend= "Account Information">
+				<label>*Username: </label><input type="text" id="uname" name="uname" required><br>
+				<label>*Password: </label><input type="password" id="passw" name="pass" size=6 required><br>
+				<label>*Confirm Password: </label><input type="password" id="repass" name="pass" size=6 required><br>
+				<label>*Email: </label> <input type="email" name= "email" id="email" placeholder="johndoe@domain.com"> <br>
+				<input type="number" maxlength="9" id="customerID" value="customerID" name="customerID" hidden>
+			<label>Zipcode: </label> <input type="number" id="zip" name= "zip" maxlength="5" placeholder= "12345"> <br>
+			<label>State: </label> 
+					<select>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+	
+			</legend>
+		</fieldset>
+	<fieldset>
+		<P> Are you interested in recieving newsletters via Cybersleuth Monthly?</p>
+		<p>Yes</p><input type="radio" name="newsletter" value="anewsletter" checked>
+		<p>No</p><input type="radio" name="newsletter" value="nnewsletter">
+	</fieldset>
+	
+	<input type="submit" id="sender" value="submit" name="sender">
+	<input type="reset" id="reseter" value="reset" name="reseter">
+</form>
+	<br>
+	
+	<footer>
+	<p id="date"></p>
+	
+	<script>
+		document.getElementById("date").innerHTML = Date();
+	</script>
+	</footer>
+</body>
+</html>
